@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"
+        importance="high">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <main>
+        <div id class="tasklist--group-details-container">
+            <div id="task_group_1" class="tasklist--group-details-item">
+                <h2 class="tasklist--group-details-title">
+                    Group Details
+                    <i class="fas fa-question-circle"></i>
+                </h2>
+                <form action="" class="tasklist--group-details-form">
+                    <div class="tasklist--group-details-row">
+                        <div class="tasklist--group-details-item-single">
+                            <label class="tasklist--group-details-label" for="groupName">Group name 2</label>
+                            <input id="groupName" type="text" name="group name" class="tasklist--input">
+                        </div>
+                        <div class="tasklist--group-details-item-single">
+                            <label class="tasklist--group-details-label" for="item choice">Item Choice</label>
+                            <div class="tasklist--items-select-dropdown">
+                                <span class="tasklist--items-selected">Multiple items</span>
+                            </div>
+                        </div>
+                        <div class="tasklist--group-details-item-single-delete">
+                            <label class="tasklist--group-details-label" for=""></label>
+                            <button type="button" class="group-details-name-item-delete-button">
+                                <span class="delete-button"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tasklist--group-details-row justify-content-start">
+                        <div class="tasklist--checkbox-wrapper">
+                            <label for="checkbox1" class="tasklist--group-details-label">Show images</label>
+                            <input id="checkbox1" type="checkbox" class="tasklist--checkbox-switch">
+                            <div class="tasklist--custom-checkbox"></div>
+                        </div>
+                        <div class="tasklist--checkbox-wrapper">
+                            <label for="checkbox1" class="tasklist--group-details-label">Visible if other items
+                                selected</label>
+                            <input id="checkbox1" type="checkbox" class="tasklist--checkbox-switch" checked>
+                            <div class="tasklist--custom-checkbox"></div>
+                        </div>
+                    </div>
+                    <div class="tasklist--group-details-row mb-15">
+                        <div class="tasklist--group-details-item-single">
+                            <div class="tasklist--items-select-dropdown">
+                                <span class="tasklist--items-selected">AND</span>
+                            </div>
+                        </div>
+                        <div class="tasklist--group-details-item-single">
+                            <div class="tasklist--items-select-dropdown">
+                                <span class="tasklist--items-selected">Bread/Rye</span>
+                            </div>
+                        </div>
+                        <div class="tasklist--group-details-item-empty">
+                        </div>
+                    </div>
+                    <input type="submit" name="submit button" value="Add Variable">
+                    <hr>
+                </form>
+                <div class="tasklist-group-container">
+                    <h2 class="tasklist--group-title">
+                        Group Name
+                    </h2>
+                    <form class="tasklist--items-container">
+                        <div class="tasklist-items-names">
+                            <div class="tasklist--item-label">Default</div>
+                            <div class="tasklist--item-label">Item image</div>
+                            <div class="tasklist--item-label">Item name</div>
+                            <div class="tasklist--item-label">Additional price (opt)</div>
+                            <div class="tasklist--item-label">In stock</div>
+                            <div class="tasklist--item-label"> Subcategory (opt)</div>
+                        </div>
+                        <div class="tasklist--items-wrapper">
+                            <div class="tasklist--item-row" draggable="true">
+                               
+                                <div class="tasklist--item-checkbox-wrapper tasklist--item-label">
+                                    <input type="checkbox" class="tasklis--item-checkbox">
+                                    <div class="tasklist--item-custom-checkbox"></div>
+                                </div>
+                                <div class="tasklist--item-label tasklist--item-photo">
+                                    <img src="./assets/Rectangle 72.png" alt="uploaded">
+                                </div>
+                                <div class="tasklist--item-label tasklist--item-name">
+                                    <input type="text" name="item name" class="tasklist--input">
+                                </div>
+                                <div class="tasklist--item-label tasklist--item-price">
+                                    <input type="text" name="price" class="tasklist--input">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <div class="tasklist--item-label tasklist--item-is-in-stock">
+                                    <div class="tasklist--checkbox-wrapper">
+                                        <input id="checkbox1" type="checkbox" class="tasklist--checkbox-switch">
+                                        <div class="tasklist--custom-checkbox"></div>
+                                    </div>
+                                </div>
+                                <div class="tasklist--item-label tasklist--item-subcategpry">
+                                    <div class="tasklist--checkbox-wrapper">
+                                        <input id="checkbox1" type="checkbox" class="tasklist--checkbox-switch">
+                                        <div class="tasklist--custom-checkbox"></div>
+                                    </div>
+                                </div>
+                                <button class="burger_bar_container">
+                                    <div class="bars"></div>
+                                    <div class="bars"></div>
+                                    <div class="bars"></div>
+                                </button>
+                            </div>
+                            <div class="tasklist--item-row" draggable="true">
+                                <div class="tasklist--item-checkbox-wrapper tasklist--item-label">
+                                    <input type="checkbox" class="tasklis--item-checkbox">
+                                    <div class="tasklist--item-custom-checkbox"></div>
+                                </div>
+                                <div class="tasklist--item-label tasklist--item-photo">
+                                    <input type="file"  accept="image/*" name="image" id="file"  class="tasklist--upload-image">
+                                    <div class="tasklist--custom-uploader">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                </div>
+                                <div class="tasklist--item-label tasklist--item-name">
+                                    <input type="text" name="item name" class="tasklist--input">
+                                </div>
+                                <div class="tasklist--item-label tasklist--item-price">
+                                    <input type="text" name="price" class="tasklist--input">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <div class="tasklist--item-label tasklist--item-is-in-stock">
+                                    <div class="tasklist--checkbox-wrapper">
+                                        <input id="checkbox1" type="checkbox" class="tasklist--checkbox-switch">
+                                        <div class="tasklist--custom-checkbox"></div>
+                                    </div>
+                                </div>
+                                <div class="tasklist--item-label tasklist--item-subcategpry">
+                                    <div class="tasklist--checkbox-wrapper">
+                                        <input id="checkbox1" type="checkbox" class="tasklist--checkbox-switch">
+                                        <div class="tasklist--custom-checkbox"></div>
+                                    </div>
+                                </div>
+                                <button class="burger_bar_container">
+                                    <div class="bars"></div>
+                                    <div class="bars"></div>
+                                    <div class="bars"></div>
+                                </button>
+                            </div>
+                        </div>
+                        <button type="button" class="add--new-button">Add New Item</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.tasklist--group-details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block-end: 50px;
+    margin-block-start: 50px;
+}
+
+@supports not ((margin-block-start: 50px) and ( margin-block-end: 50px)) {
+    .tasklist--group-details-container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }    
+}

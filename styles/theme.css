@@ -1,0 +1,68 @@
+.tasklist--group-details-item{
+    background-color: #fff;
+    box-shadow:  4px 4px 50px rgba(0, 0, 0, 0.15);
+}
+
+.tasklist--group-details-title,
+.tasklist--group-title{
+    color: #3C4D5F;
+}
+
+.fa-question-circle{
+    color: #ccc;
+}
+
+.tasklist--items-selected{
+    color: #1F2C3A;
+}
+
+.tasklist--group-details-item-single .tasklist--group-details-label{
+    color: #3C4D5F;
+}
+
+.tasklist--custom-checkbox::before{
+    background-color: #fff;
+}
+
+.tasklist--checkbox-wrapper .tasklist--group-details-label{
+    color: #1F2C3A;
+}
+
+.tasklist--group-details-form > input[type="submit"]{
+    color: #F8F8F8;
+    background-color: #5BA6FF;
+}
+
+.tasklist--input, .tasklist-items-names, .tasklist--item-row,
+.tasklist--custom-uploader,
+.tasklist--items-select-dropdown{
+    border-color:  #DDE0E7;
+}
+
+
+.tasklist--group-details-label{
+    color: #3C4D5F;
+}
+
+.tasklist--items-container::-webkit-scrollbar-thumb {
+	background-color: #D7D6D6;
+    outline: 1px solid #D7D6D6;
+    border-radius: 7px;
+}
+
+.tasklist--item-custom-checkbox{
+    border-color:  #DDE0E7;
+    background-color: transparent;
+}
+
+.tasklist--custom-uploader i{
+    color: #DDE0E7;
+}
+
+.bars{
+    background-color:  #D3D3E3;
+}
+
+.add--new-button{
+    color: #5BA6FF;
+}

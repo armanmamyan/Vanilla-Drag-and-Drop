@@ -1,0 +1,30 @@
+.tasklist--items-selected{
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 300;
+}
+
+.tasklist--custom-checkbox::before{
+    left: 2px;
+}
+
+.tasklist--custom-checkbox{
+    background-color: #B8B8B8;
+}
+
+.tasklist--checkbox-switch:checked ~ .tasklist--custom-checkbox{
+    background-color: #01BD70;
+}
+
+.tasklist--checkbox-switch:checked ~ .tasklist--custom-checkbox::before{
+    transform: translate(16px,-50%);
+}
+
+.tasklis--item-checkbox:checked ~ .tasklist--item-custom-checkbox{
+    border-width: 0;
+    background-image: url('../assets/check-square.svg');
+}
+
+.tasklist--item-row.drag-start{
+    opacity: .5;
+}

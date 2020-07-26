@@ -1,0 +1,387 @@
+.tasklist--group-details-item{
+    width: 100%;
+    max-width: 790px;
+    border-radius: 10px;
+    padding-block-start: 28px;
+    padding-block-end: 28px;
+}
+
+.tasklist--group-details-title{
+    font-weight: bold;
+    line-height: 16px;
+    padding: 0 50px
+}
+
+.tasklist--group-details-title i{
+    position: relative;
+    top: -14px;
+    font-size: 14px;
+}
+
+.tasklist--group-details-form, .tasklist--group-title{
+    padding: 0 50px;
+}
+
+.tasklist--group-details-row{
+    margin-block-end: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tasklist--group-details-row:first-child{
+    margin-block-start: 40px;
+}
+
+.tasklist--group-details-item-single{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 270px;
+}
+
+.tasklist--group-details-item-single:first-child{
+    margin-inline-end: 30px;
+}
+
+.tasklist--group-details-item-single-delete{
+    flex-grow: 1;
+}
+
+.tasklist--group-details-label{
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    margin-block-end: 15px;
+}
+
+.tasklist--group-details-name-label:empty{
+    margin-block-end: 31px;
+}
+
+.tasklist--input,
+.tasklist--items-select-dropdown{
+    height: 40px;
+    line-height: 38px;
+    padding: 0 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.tasklist--items-select-dropdown{
+    position: relative;
+    cursor: pointer;
+}
+
+.tasklist--items-select-dropdown::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 12px;
+    height: 7px;
+    transform: translateY(-50%);
+    background-image: url('../assets/arrow_down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.group-details-name-item-delete-button{
+    display: block;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    margin-inline-start: auto;
+}
+
+.delete-button{
+    display: block;
+    width: 16px;
+    height: 20px;
+    background-image: url('../assets/Trash.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.tasklist--checkbox-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-inline-end: 40px;
+}
+
+.tasklist--checkbox-switch{
+    position: absolute;
+    width: 34px;
+    height: 18px;
+    opacity: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.tasklist--custom-checkbox{
+    position: relative;
+    width: 34px;
+    height: 18px;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.tasklist--custom-checkbox::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    pointer-events: none;
+    will-change: transform;
+    transition: background-color .2s ease, transform .3s ease-in-out;
+}
+
+.tasklist--checkbox-wrapper .tasklist--group-details-label{
+    margin-block-end: 0;
+    margin-inline-end: 16px;
+}
+
+.tasklist--group-details-item-empty{
+    flex-grow: 1;
+}
+
+.tasklist--group-details-form > input[type="submit"]{
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.tasklist--group-title{
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.tasklist--item-label{
+    font-size: 14px;
+    line-height: 18px;
+    margin-inline-end: 25px;
+    flex-shrink: 0;
+}
+
+.tasklist-items-names{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed;
+    padding-block-end: 13px;
+    margin-block-end: 20px;
+}
+
+.tasklist--item-label:nth-child(1){
+    width: 7%;
+}
+
+.tasklist--item-label:nth-child(2){
+    width: 7%;
+}
+
+.tasklist--item-label:nth-child(3){
+    width: 24%;
+}
+
+.tasklist--item-label:nth-child(4){
+    width: 14%;
+}
+
+.tasklist--item-label:nth-child(5){
+    width: 8%;
+}
+
+.tasklist--items-container{
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-block-start: 34px;
+    padding-block-end: 28px;
+    padding-inline-start: 50px;
+}
+.tasklist--items-container::-webkit-scrollbar {
+    height: 5px;
+}
+
+.tasklist--item-row{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-block-end: 10px;
+    margin-block-end: 10px;
+    border-bottom: 1px dashed;
+    transition: all .3s ease;
+}
+
+.tasklist--item-row input{
+    width: 100%;
+}
+
+.tasklist--item-checkbox-wrapper{
+    position: relative;
+}
+
+.tasklist--item-checkbox-wrapper input{
+    position: absolute;
+}
+
+.tasklis--item-checkbox{
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.tasklist--item-custom-checkbox{
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 4px;
+    pointer-events: none;
+    transition: border-width .2s ease, background-image .5s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tasklist--item-price{
+    position: relative;
+}
+
+.tasklist--item-price i{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.tasklist--item-price input{
+    text-align: center;
+    padding-inline-start: 24px;
+}
+
+.tasklist--item-is-in-stock .tasklist--checkbox-wrapper{
+    width: 100%;
+}
+
+.burger_bar_container {
+    position: absolute;
+    left: -40px;
+    cursor: grab;
+    background-color: transparent;
+}
+
+.bars {
+    width: 18px;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 4px;
+    pointer-events: none;
+  }
+  .tasklist--item-photo{
+      position: relative;
+      overflow: hidden;
+    }
+    .tasklist--item-photo img{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 6px;
+  }
+  .tasklist--item-photo  .tasklist--upload-image{
+        width: 40px;
+        height: 40px;
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+  }
+  .tasklist--custom-uploader{
+      width: 40px;
+      height: 40px;
+      line-height: 38px;
+      text-align: center;
+      background-color: transparent;
+      border: 1px solid;
+      border-radius: 6px;
+      pointer-events: none;
+  }
+
+  .tasklist--custom-uploader i{
+      font-size: 17px;
+  }
+
+  .add--new-button{
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    margin: 10px 0;
+    background-color: transparent;
+  }
+   
+@supports not ((padding-block-start: 28px)) {
+    .tasklist--item-row{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .tasklist--item-price input{
+        padding-left: 24px;
+    }
+    .tasklist-items-names{
+        padding-bottom: 13px;
+        margin-bottom: 20px;
+    }
+    .tasklist--items-container{
+        margin-top: 34px;
+        padding-left: 50px;
+        padding-bottom: 28px;
+    }
+    .tasklist--item-label{
+        margin-left: 25px;
+    }
+
+    .tasklist--group-details-item{
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+    .tasklist--group-details-row:first-child{
+        margin-top: 40px;
+    }
+    .tasklist--group-details-row{
+        margin-bottom: 25px;
+    }
+    
+    .tasklist--group-details-item-single:first-child{
+        margin-right: 30px;
+    }
+    .tasklist--group-details-label{
+        margin-bottom: 15px;
+    }
+    
+    .tasklist--group-details-label:empty{
+        margin-bottom: 31px;
+    }
+    .tasklist--checkbox-wrapper .tasklist--group-details-label{
+        margin-bottom: 0;
+        margin-right: 16px;
+    }
+    .tasklist--checkbox-wrapper{
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+    }
+}
